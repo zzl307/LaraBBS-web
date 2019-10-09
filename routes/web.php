@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StaticPagesContorller@home');
+Route::get('/help', 'StaticPagesContorller@help');
+Route::get('/about', 'StaticPagesContorller@help@about');
